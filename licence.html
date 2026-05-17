@@ -1,25 +1,155 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<!doctype html>
+<html lang="en">
+  <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>About us</title>
+        <title>Terms of Service — BlockStop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="hero1">
+  <header class="hero">
     <nav class="navbar">
-      <div class="logo">
-        <li><a href="index.html">BlockStop</a></li>
-    </div>
+      <div class="logo"><li><a href="index.html">BlockStop</a></li></div>
       <ul class="nav-links">
         <li><a href="index.html#products">Products</a></li>
         <li><a href="about_us.html">About us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="impressum.html">Contact</a></li>
+        <li><a href="licence.html">Licence</a></li>
+        <li><a href="datenschutzerklärung.html">Privacy policy</a></li>
       </ul>
     </nav>
+  </header>
+  <main class="agb">
+  <h1>Terms of Service</h1>
+  <p class="small">
+    Effective date: [YYYY-MM-DD]. These Terms govern subscriptions to the [Your App Name] service (the “Service”) operated by [Company name], registered at [address], Company ID: [ID].
+  </p>
+
+  <section>
+    <h2>1. Agreement by use</h2>
+    <p>
+      By accessing or using this website or the Service, you accept these Terms.
+      Continued use of the website or Service constitutes assent where these Terms are presented in a clear, conspicuous link and users have reasonable notice.
+      <span class="small">If you do not agree, do not use the Service.</span>
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Definitions</h2>
+    <p>
+      “Consumer” means a natural person who acts for purposes outside his/her trade, business or profession.
+      “Subscription” means a paid recurring access to the Service.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Services and Pricing</h2>
+    <p>
+      We provide access to the app features described on our pricing page.
+      Prices, billing cycles, and free-trial terms are those shown during sign-up and may be updated after notice to subscribers.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Payment, Renewal, Cancellation</h2>
+    <p>
+      Subscriptions automatically renew unless cancelled before the next billing date.
+      To cancel, follow the cancellation flow in the app or contact customer support at [email].
+      Refund and cancellation policies applicable to consumers are stated on the order page and in this clause.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Consumer Information & Right of Withdrawal</h2>
+    <p>
+      If you are a Consumer in Austria ordering a paid subscription online, you have certain information and withdrawal rights under Austrian distance-contract and consumer-protection law.
+      When applicable, the right of withdrawal and how to exercise it are explained during checkout and in our Customer Support pages.
+      Exceptions to withdrawal (e.g., immediate digital performance started with your explicit consent and waiver of the withdrawal right) will be clearly stated at purchase.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. User Account</h2>
+    <p>
+      You must provide accurate information and keep account credentials secure.
+      You are responsible for activity that occurs under your account.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Data Protection</h2>
+    <p>
+      We process personal data according to our Privacy Policy, which explains legal bases, purposes, and user rights (including access, correction, and deletion).
+      The Privacy Policy also describes cookie use and any data transfers.
+      See our <a href="datenschutzerklärung.html">Privacy Policy</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Limitation of Liability</h2>
+    <p>
+      To the extent permitted by law, our liability is limited to direct damages up to the amount paid in the 12 months preceding the claim.
+      Certain consumer-protection liability rules under Austrian law cannot be excluded; consumer rights remain unaffected where mandatory.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Modifications</h2>
+    <p>
+      We may modify these Terms.
+      For existing subscribers we will provide notice of material changes and — where required by law — obtain explicit consent for changes that negatively affect consumers’ essential rights.
+      Continued use after notice indicates acceptance of updated Terms.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Governing Law & Dispute Resolution</h2>
+    <p>
+      These Terms are governed by Austrian law.
+      Consumers retain the right to bring claims in the courts where they reside under mandatory consumer-protection rules.
+      For other disputes, the competent courts of [City], Austria will have jurisdiction unless mandatory law provides otherwise.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Contact</h2>
+    <p>
+      Company: [Company name], Address: [address], Email: [email], Phone: [phone].
+    </p>
+  </section>
+
+  </main>
+  
+
+  <footer class="small">
+    <p>
+      Last updated: [YYYY-MM-DD]. If you are a consumer in Austria you may have additional rights under the Austrian Consumer Protection Act, the Distance and Off‑Premises Contracts Act and related e‑commerce rules; see our information pages for details.
+    </p>
+  </footer>
+  
+  <div class="agreement-box">
+    <p class="agree-text">
+      By clicking “I Agree to the Terms of Service” below, you confirm that you have read, understood, and agree to be bound by these Terms of Service.
+    </p>
+    <button id="agreeBtn" class="agree-btn" type="button">
+      I Agree to the Terms of Service
+    </button>
+    <p class="small" id="agreeNote" style="display:none; margin-top:8px;">
+      Thank you. You have agreed to the Terms of Service.
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('agreeBtn').addEventListener('click', function () {
+      document.getElementById('agreeNote').style.display = 'block';
+      this.disabled = true;
+      this.textContent = 'Agreed';
+    });
+  </script>
+
+
     <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie settings" hidden>
   <div class="cookie-banner__content">
     <h2>We use cookies</h2>

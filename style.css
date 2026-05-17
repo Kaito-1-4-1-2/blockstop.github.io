@@ -112,11 +112,12 @@ a:hover {
 
   height: 160px;
   border-radius: 10px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/2007-09-20_Linux_2.6_Kernel_Panic.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original');
+  background: url('https://upload.wikimedia.org/wikipedia/commons/9/93/Knowledge_Is_Human_animated_yellow_star.gif?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original')
+  center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f7f7f7;
+  color: #222;
   font-size: 1.2rem;
   margin-bottom: 15px;
 }
@@ -296,9 +297,39 @@ a:hover {
   margin-top: 4px;
 }
 
+
 .agb {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.buy{
+  font-size: 20px;
   color: #222;
-  
+  a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#222; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+}
+
+.ncl {
+  display: inline-block;
+    a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#222; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
 }
 
 @media (max-width: 768px) {
