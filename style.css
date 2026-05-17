@@ -74,7 +74,7 @@ a:hover {
 
 .btn {
   display: inline-block;
-  background: #ff7a59;
+  background: #9c1f00;
   color: white;
   padding: 12px 24px;
   text-decoration: none;
@@ -129,7 +129,7 @@ a:hover {
 .card span {
   display: inline-block;
   margin-top: 12px;
-  color: #ff7a59;
+  color: #9c1f00;
   font-weight: bold;
 }
 
@@ -192,7 +192,7 @@ a:hover {
   background: transparent;
   border: none;
   padding: 0;
-  color: #ff7a59;
+  color: #9c1f00;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -268,7 +268,7 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #ff7a59;
+  border-color: #9c1f00;
   box-shadow: 0 0 0 3px rgba(255, 122, 89, 0.15);
 }
 
