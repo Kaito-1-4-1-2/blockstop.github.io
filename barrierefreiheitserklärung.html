@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web accessability</title>
+  <meta name="description" content="Contact form for BlockStop">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero hero-contact">
+    <nav class="navbar">
+      <div class="logo"><li><a href="index.html">BlockStop</a></li></div>
+      <ul class="nav-links">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li><a href="impressum.html">Contact</a></li>
+        <li><a href="licence.html">Licence</a></li>
+        <li><a href="datenschutzerklärung.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+    </header>
+    <p>Banner: Social media platter.svg</p>
+
+    <main class="agb">
+        <br>
+        <br>
+    <h1>Web accessability</h1>
+    <p>Our Web page follows the WCAG 2.2 standard fully for web accessability</p>
+    <br>
+    <p>The authenticity of the web accessability was proven on the 17.05.2026 by<a href="https://wave.webaim.org/" class="agb">wave.webaim.org.</a></p>
+    <br>
+    <p>If you are able to find something that limits the Web accessability of this Web page, please contact:</p>
+    <br>
+    <p>E-Mail: post@bsb.wien.gv.at<br>Telefon: 01 4000-38950</p>
+    <br>
+    <br>
+    <br>
+
+
+
+</main>
+
+
+    <footer class="footer">
+    <p>&copy; 2026 BlockStop. All rights reserved.</p>
+  </footer>
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie settings" hidden>
+  <div class="cookie-banner__content">
+    <h2>We use cookies</h2>
+    <p>
+      We use necessary cookies for the website to function and optional cookies for analytics and marketing.
+      Please choose whether you accept or reject optional cookies.
+    </p>
+
+    <div class="cookie-banner__actions">
+      <button id="cookie-reject" class="btn btn-secondary" type="button">Reject</button>
+      <button id="cookie-accept" class="btn btn-primary" type="button">Accept</button>
+    </div>
+
+    <button id="cookie-settings-toggle" class="cookie-banner__link" type="button">
+      Show settings
+    </button>
+
+    <div id="cookie-settings" class="cookie-settings" hidden>
+      <label>
+        <input type="checkbox" checked disabled />
+        Necessary cookies
+      </label>
+      <label>
+        <input type="checkbox" id="cookie-analytics" />
+        Analytics cookies
+      </label>
+      <label>
+        <input type="checkbox" id="cookie-marketing" />
+        Marketing cookies
+      </label>
+
+      <div class="cookie-banner__actions cookie-banner__actions--small">
+        <button id="cookie-save" class="btn btn-primary" type="button">Save selection</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="cookie-banner.js"></script>
+
+<script>
+  const form = document.querySelector('.contact-form');
+
+  const errorMap = {
+    name: 'Please enter your first and last name',
+    email: 'Please enter an email address in the format: username@domain.com',
+    subject: 'Please enter the subject of your message',
+    message: 'Please enter the message you would like us to receive',
+    privacy: 'Please fill out this field.'
+  };
+
+  const fields = form.querySelectorAll('input[required], textarea[required]');
+
+  fields.forEach(field => {
+    field.addEventListener('invalid', function (e) {
+      e.preventDefault();
+
+      const errorElement = document.getElementById(field.id + 'Error');
+      if (errorElement) {
+        errorElement.textContent = errorMap[field.id] || 'Please fill out this field.';
+      }
+    });
+
+    field.addEventListener('input', function () {
+      const errorElement = document.getElementById(field.id + 'Error');
+      if (errorElement) {
+        errorElement.textContent = '';
+      }
+    });
+
+    field.addEventListener('change', function () {
+      const errorElement = document.getElementById(field.id + 'Error');
+      if (errorElement) {
+        errorElement.textContent = '';
+      }
+    });
+  });
+</script>
+</body>
+</html>
